@@ -1,5 +1,4 @@
 from flask import Flask, Response
-
 from RollsignController import Controller
 
 rollsign = Controller()
