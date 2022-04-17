@@ -3,7 +3,7 @@ from flask import Flask, Response
 from RollsignController import Controller
 
 rollsign = Controller()
-rollsign.set_images_dir("../display_images")
+rollsign.set_images_dir('../display_images')
 
 app = Flask(__name__)
 
@@ -21,5 +21,3 @@ def next():
 def prev():
     rollsign.show_prev_image()
     return Response(status=200)
-
-app.run(host='0.0.0.0')
